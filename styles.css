@@ -1,0 +1,22 @@
+:root {
+  --cont-size: 100vh;
+  --square-size: calc(var(--cont-size) / 16);
+}
+.container {
+  width: var(--cont-size);
+  height: var(--cont-size);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.square {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: var(--square-size);
+  height: var(--square-size);
+}
+
+.drawn {
+  background-color: darkblue;
+}
