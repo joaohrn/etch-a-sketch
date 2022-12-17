@@ -19,9 +19,13 @@ creator.addEventListener("click", () => {
   squares.forEach((square) => {
     square.style.width = `calc(960px/${choice})`;
   });
+
   squares.forEach((square) => {
     square.addEventListener("mouseenter", (e) => {
-      e.target.style.backgroundColor = "red";
+      let red = Math.floor(Math.random() * 255);
+      let green = Math.floor(Math.random() * 255);
+      let blue = Math.floor(Math.random() * 255);
+      e.target.style.backgroundColor = `rgb(${red},${green},${blue})`;
     });
   });
 });
