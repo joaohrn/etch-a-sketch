@@ -1,8 +1,8 @@
 :root {
-  --cont-size: 100vh;
-  --square-size: calc(var(--cont-size) / 16);
+  --cont-size: 960px;
 }
 .container {
+  background-color: blue;
   width: var(--cont-size);
   height: var(--cont-size);
   display: flex;
@@ -11,10 +11,6 @@
 }
 .square {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  width: var(--square-size);
-  height: var(--square-size);
 }
 
 .drawn {
